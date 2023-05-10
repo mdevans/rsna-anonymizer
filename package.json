@@ -1,12 +1,13 @@
 {
   "name": "rsna-anonymizer",
-  "version": "1.0.0",
-  "description": "Hello World",
+  "version": "17.0.0",
+  "description": "RSNA DICOM Anonymizer Tool",
   "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "electron-forge make",
+    "publish": "electron-forge publish"
   },
   "author": "Michael Evans",
   "license": "MIT",
@@ -16,6 +17,7 @@
     "@electron-forge/maker-rpm": "^6.1.1",
     "@electron-forge/maker-squirrel": "^6.1.1",
     "@electron-forge/maker-zip": "^6.1.1",
+    "@electron-forge/publisher-github": "^6.1.1",
     "electron": "24.2.0"
   },
   "dependencies": {

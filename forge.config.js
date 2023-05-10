@@ -19,4 +19,16 @@ module.exports = {
       config: {},
     },
   ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'mdevans',
+          name: 'rsna-anonymizer'
+        },
+        prerelease: true
+      }
+    }
+  ]
 };
