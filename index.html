@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello RSNA</title>
+    <title>RSNA Anonymizer</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
-    <h1>Hello RSNA</h1>
-    We are using Node.js <span id="node-version"></span>,
+    <img class="logo" src="rsna_logo.png" alt="RSNA Logo">
+    <h2 class="centered-title">DICOM Anonymizer Version 17</h2>
+    <p>We are using Node.js <span id="node-version"></span>,
     Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+    and Electron <span id="electron-version"></span>.</p>
 
     <script src="./renderer.js"></script>
   </body>
