@@ -5,6 +5,7 @@ const createWindow = () => {
     console.log('hello from main.js.createWindow')
 
     const win = new BrowserWindow({
+        icon: path.join(__dirname, 'assets/icons/rsna.ico'),
         width: 800,
         height: 600,
         resizable: false,
