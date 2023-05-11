@@ -26,8 +26,11 @@ jobs:
       - name: Build and package
         run: npm run make
 
+      - name: Print working directory
+        run: pwd
+
       - name: List files in current directory
-        run: ls -l ./out/make
+        run: ls -R out/make
 
       - name: Release
         uses: softprops/action-gh-release@v1
