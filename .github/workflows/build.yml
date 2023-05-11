@@ -21,12 +21,7 @@ jobs:
         run: npm run make
 
       - name: Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          draft: true
-          prerelease: true
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: test
+        files: out/make/*
