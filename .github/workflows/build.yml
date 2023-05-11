@@ -7,8 +7,12 @@ on:
         required: true
 
 jobs:
-  release:
-    runs-on: windows-latest
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        node: [12.x, 14.x, 15.x]
     steps:
       - name: Check out code
         uses: actions/checkout@v2
