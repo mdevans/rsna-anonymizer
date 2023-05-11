@@ -26,6 +26,9 @@ jobs:
       - name: Build and package
         run: npm run make
 
+      - name: List files in current directory
+        run: ls -R
+
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
