@@ -1,4 +1,6 @@
 const { app, BrowserWindow } = require('electron')
+// Squirrel windows restarts app after install:
+if (require('electron-squirrel-startup')) app.quit();
 const path = require('path')
 
 const createWindow = () => {
