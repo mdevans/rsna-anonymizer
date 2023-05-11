@@ -39,6 +39,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: |
+            out/make/*.*
             out/make/*/*/*.*
             out/make/*/*/*/*.*
           tag_name: ${{ github.event.inputs.tag }}
