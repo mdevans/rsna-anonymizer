@@ -16,6 +16,7 @@ module.exports = {
     },
     {
       name: '@electron-forge/maker-dmg',
+      platforms: ['darwin'],
       config: {
         icon: 'assets/icons/rsna.icns',
         overwrite: true,
